@@ -1,0 +1,35 @@
+#produtos {
+background-color: var( --fourth-color);
+}
+
+.container__produtos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo__produto {
+    font-family: var(--font);
+    color: var(--font-color-black);
+    font: 1.9rem;
+    font-weight: 800;
+    padding: 2rem 0;
+    text-transform: uppercase;
+}
+
+.lista__produtos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.produto {
+    text-align: center;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: 1rem;
+    padding: 1rem; 
+    
+}

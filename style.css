@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('componentesCss/cabecalho.css');
+@import url('componentesCss/introducao.css');
+@import url('componentesCss/carrossel.css');
+@import url('componentesCss/produtos.css');
+
+
+:root {
+    --font: "Open Sans", sans-serif;
+    /* weight:  300 to 800 */
+    --font-color-black: #1C1C1C;
+    --font-color-ligth: #fff;
+    --first-color: #3E3232;
+    --second-color: #503C3C;
+    --third-color: #7E6363;
+    --fourth-color: #A87C7C;
+
+}
+

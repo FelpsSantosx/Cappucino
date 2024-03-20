@@ -1,0 +1,41 @@
+#introducao {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background-color: var(--first-color);
+    gap: 1rem;
+    padding: 2rem;
+    border-top: 1px solid #fff;
+}
+
+.banner__introducao{
+    color: var( --font-color-ligth);
+}
+
+.banner__titulo{
+    font-family: var(--font);
+    font: 1.9rem;
+    font-weight: 800;
+}
+
+.banner__subTitulo{
+    font-family: var(--font);
+    font: 0.9rem;
+    font-weight: 400;
+}
+
+.banner__pesquisa{
+    background-color: transparent;
+    border: 1px solid var(--third-color);
+    color: var(--font-color-ligth);
+    border-radius: 24px;
+    width: 60%;
+    margin: 0.5rem 0;
+    padding: 0.2rem;
+    text-align: center;
+}
+
+.banner__pesquisa::placeholder {
+    font-family: var(--font);
+    font-weight: 800;
+}

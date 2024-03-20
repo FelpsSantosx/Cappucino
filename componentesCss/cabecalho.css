@@ -1,0 +1,9 @@
+nav {
+    background-color: var(--first-color);
+}
+
+.nav-link {
+    font-family: var(--font);
+    font: 0.9rem;
+    font-weight: 700;
+}

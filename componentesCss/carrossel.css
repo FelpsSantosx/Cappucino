@@ -1,0 +1,9 @@
+#carrossel {
+    background-color: var( --third-color);
+    padding: 2rem 0;
+}
+
+.carousel {
+    margin: auto;
+    left: 50%;
+}
