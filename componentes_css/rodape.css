@@ -1,0 +1,43 @@
+footer {
+   background-color: var(--first-color);
+   color: var(--font-color-ligth);
+   padding: 1rem 0;
+}
+
+.rodape {
+   text-align: center;
+   display: flex;
+   justify-content: space-around;
+}
+
+.copyright {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.copyright a {
+   text-decoration: none;
+   color: var(--font-color-ligth);
+}
+
+.copyright p {
+   color: var(--font-color-ligth);
+}
+
+.contato {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.links {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.links a {
+   text-decoration: none;
+   color: var(--font-color-ligth);
+}
