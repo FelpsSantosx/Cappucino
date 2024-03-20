@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-@import url('componentesCss/cabecalho.css');
-@import url('componentesCss/introducao.css');
-@import url('componentesCss/carrossel.css');
-@import url('componentesCss/produtos.css');
+@import url('componentes_css/cabecalho.css');
+@import url('componentes_css/introducao.css');
+@import url('componentes_css/carrossel.css');
+@import url('componentes_css/produtos.css');
 
 
 :root {
