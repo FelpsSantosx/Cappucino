@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-@import url('componentes_css/cabecalho.css');
-@import url('componentes_css/introducao.css');
-@import url('componentes_css/carrossel.css');
-@import url('componentes_css/produtos.css');
-@import url('componentes_css/forms.css');
-@import url('componentes_css/rodape.css');
+@import url('componentes_css/telaPrincipal/cabecalho.css');
+@import url('componentes_css/telaPrincipal/introducao.css');
+@import url('componentes_css/telaPrincipal/carrossel.css');
+@import url('componentes_css/telaPrincipal/produtos.css');
+@import url('componentes_css/telaPrincipal/forms.css');
+@import url('componentes_css/telaPrincipal/rodape.css');
+
+@import url('componentes_css/logIn/log-in.css');
 
 
 :root {
@@ -16,6 +18,4 @@
     --second-color: #503C3C;
     --third-color: #7E6363;
     --fourth-color: #A87C7C;
-
 }
-
