@@ -1,0 +1,26 @@
+.tela__produto {
+    background-color: var( --fourth-color);
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    font-family: var(--font);
+    color: var(--font-color-ligth);
+
+}
+
+.tela__detalhe {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem 0;
+}
+
+.tela__detalhe p {
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.tela__detalhe a {
+    text-decoration: none;
+}

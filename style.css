@@ -8,6 +8,9 @@
 
 @import url('componentes_css/logIn/log-in.css');
 
+@import url('componentes_css/telaProduto/detalhe.css');
+@import url('componentes_css/telaProduto/sobreProduto.css');
+
 
 :root {
     --font: "Open Sans", sans-serif;

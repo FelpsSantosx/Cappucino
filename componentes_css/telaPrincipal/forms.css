@@ -1,16 +1,18 @@
 #forms {
+    
     background-color: var(--fourth-color);
+    
 }
 
 .card__forms {
     display: flex;
     flex-direction: column;
     padding: 2rem;
-    border-top: 1px solid var(--third-color) ;
-    color: var(--font-color-ligth );
+    border-top: 1px solid var(--third-color);
+    color: var(--font-color-ligth);
 }
 
-.btn{
+.btn {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     padding: 16px;
     margin-top: 1rem;

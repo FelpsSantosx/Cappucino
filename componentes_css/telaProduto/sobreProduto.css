@@ -1,0 +1,32 @@
+.box__sobreProduto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5rem;
+    padding: 0 5rem;
+}
+
+.produto__imagem-descricao {
+    padding: 1rem;
+    text-align: center;
+}
+
+.produto__imagem-descricao img {
+    width: 40vh;
+}
+
+.produto__compre {
+    display: flex;
+    flex-direction: column;
+}  
+
+.produto__compre h2 {
+    padding: 1rem 0;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.produto__compre p {
+    font-size: 1rem;
+    font-weight: 400;
+}
