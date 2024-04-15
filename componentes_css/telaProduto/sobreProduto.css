@@ -1,4 +1,5 @@
 .box__sobreProduto {
+    background-color: var(--second-color);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -18,7 +19,8 @@
 .produto__compre {
     display: flex;
     flex-direction: column;
-}  
+    gap: .5rem;
+}
 
 .produto__compre h2 {
     padding: 1rem 0;
@@ -29,4 +31,23 @@
 .produto__compre p {
     font-size: 1rem;
     font-weight: 400;
+}
+
+.carrosel__outrosProdutos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--third-color);
+}
+
+.carrosel__outrosProdutos h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: var(--font);
+}
+
+.carousel-inner {
+    display: flex !important;
+    flex-direction: row IM !important;
+    gap: 1.5rem !important;
 }
