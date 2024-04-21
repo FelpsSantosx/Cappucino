@@ -1,0 +1,97 @@
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem 20rem;
+    padding: 1rem;
+    background-color: var(--fourth-color);
+}
+
+.cadastro {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.cadastro__dados {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+    border: 1px solid black;
+}
+
+.cadastro__dados h2 {
+    color: var(--font-color-black);
+    font-family: var(--font);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.cadastro__login {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+    border: 1px solid black;
+}
+
+.cadastro input {
+    background-color: transparent;
+    border: solid wheat;
+    border-radius: 24px;
+    color: var(--font-color-ligth);
+    margin: 0.5rem 0;
+    padding: 0.2rem;
+    text-align: start;
+    text-indent: 15px;
+    font-family: var(--font);
+}
+
+.cadastro li {
+    color: var(--font-color-black);
+    font-family: var(--font);
+    font-size: 1rem;
+    font-weight: 400;
+    padding: .8rem 0;
+}
+
+.cadastro p {
+    color: var(--font-color-black);
+    font-family: var(--font);
+    font-size: 1rem;
+    font-weight: 400;
+    padding: .8rem 0;
+}
+
+.cadastro input:focus {
+    background-color: var(--third-color);
+    outline: none;
+    border: 1px solid #fff;
+    box-shadow: 0px 4px 4px 0px rgba(255, 255, 255, 0.7);
+}
+
+.cadastro input::placeholder {
+    color: #fff;
+    border: none;
+    border-radius: 24px;
+    margin: 0.5rem 0;
+    padding: 0.2rem;
+}
+
+.cadastro input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+
+}
