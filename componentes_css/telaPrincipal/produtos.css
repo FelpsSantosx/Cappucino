@@ -2,9 +2,9 @@
     background-color: var(--fourth-color);
 }
 
-.container__produtos {
+#container__produtos {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
 }
 
@@ -19,7 +19,8 @@
 
 .lista__produtos {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: center;
     gap: 4rem;
 }
