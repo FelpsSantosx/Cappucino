@@ -1,4 +1,4 @@
-.produto__principal {
+#produto__principal {
     min-height: 100vh;
     background-color: var(--fourth-color);
     display: flex;
