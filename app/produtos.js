@@ -3,8 +3,6 @@ const produtos = [
     { id: 1, imagem: "assents/cappucino.png", nome: "Back-End", descrição: "Tradicional", preco: "12.90" },
 ]
 
-
-
 function gerarHTMLProduto(produto, index) {
     return `
     <div id="container__produtos">

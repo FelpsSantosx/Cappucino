@@ -5,7 +5,7 @@ window.onload = function() {
     // Exibir os detalhes do produto na página
     const containerDetalhes = document.getElementById("produto__principal");
     containerDetalhes.innerHTML = `
-    <main id="produto__principal">
+    <main class="produto__principal">
     <div class="produto__imagem">
       <img src="${produtoSelecionado.imagem}" alt="Produto">
     </div>
