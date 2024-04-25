@@ -1,133 +1,64 @@
-.produto__principal {
-    min-height: 100vh;
-    background-color: var(--fourth-color);
+#produto__principal {
     display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: center;
+    background-color: #e6d6d6;
+    padding: 2em 0;
 }
 
-.produto__principal div {
+.container__detalhe {
+    display: flex;
+    justify-content: center;
+    padding: 10rem;
+}
+
+.produto__detalhe {
+    padding: 5rem 7rem;
+    display: flex;
+    align-items: center;
+    background-color: #e4dada;
+    border: 1px solid rgb(192, 189, 189);
+    border-radius: 18px;
+    gap: 5rem;
+    box-shadow: 0px 4px 4px 0px rgba(255, 255, 255, 0.7);
+}
+
+.produto__detalhe img {
+    width: 50%;
+}
+
+.detalhe {
     display: flex;
     flex-direction: column;
-}
-
-.produto__imagem {
-    border: 1px solid black;
-    border-radius: 12px;
-    padding: 2rem;
-}
-
-.produto__imagem img {
-    width: 50vh;
-}
-
-.produto__sobre {
-    background-color: var(--third-color);
-    border: none;
-    border-radius: 12px;
-    padding: 4.0rem 3rem;
-    gap: 0.3rem;
     font-family: var(--font);
-    color: var(--font-color-black);
-    font-size: 2.0rem;
 }
 
-.produto__sobre h2 {
+.detalhe h2 {
     text-transform: uppercase;
-    font-weight: 800;
-}
-
-.produto__sobre p {
-    font-weight: 500;
-    padding-bottom: 1.5rem;
-}
-
-.produto__sobre label {
-    font-weight: 400;
-}
-
-.produto__sobre ul {
-    justify-content: center;
-    display: flex;
-}
-
-.produto__sobre li {
-    padding: 0.5rem;
-}
-
-.produto__sobre button {
-    text-transform: uppercase;
-    font-size: 1.5rem;
-    color: var(--font-color-ligth);
-    background-color: var(--first-color);
-    border: none;
-    border-radius: 5px;
-    padding: .5rem;
-    text-align: center;
-}
-
-.produto__sobre button:hover {
-    background-color: var(--second-color);
-}
-
-.produto__sobre h3 {
-    padding-top: 1rem;
-    font-weight: 600;
-}
-
-.produto__resumo {
-    background-color: var(--third-color);
-    border: none;
-    border-radius: 12px;
-    padding: 5rem 1rem;
-    gap: 0.8rem;
-    font-family: var(--font);
-    color: var(--font-color-black);
-    font-size: 1rem;
-    text-align: center;
-}
-
-.produto__resumo h2 {
-    text-transform: uppercase;
-    font-weight: 800;
-}
-
-.produto__resumo h3 {
-    text-transform: uppercase;
+    font-size: 3rem;
     font-weight: 700;
 }
 
-.produto__resumo p {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+.detalhe p {
+    font-size: 1rem;
     font-weight: 500;
 }
 
-.produto__resumo button {
+.detalhe h1 {
     text-transform: uppercase;
-    font-size: 1rem;
-    color: var(--font-color-ligth);
-    background-color: var(--first-color);
-    border: none;
-    border-radius: 5px;
-    padding: .5rem;
-    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
 }
 
-.produto__resumo button:hover {
-    background-color: var(--second-color);
-}
-
-.produto__resumo input {
+.detalhe button {
     text-transform: uppercase;
-    font-size: 1rem;
-    color: var(--font-color-ligth);
-    background-color: var(--first-color);
+    font-weight: 600;
+    background-color: #fff;
     border: none;
-    border-radius: 5px;
-    padding: .5rem;
-    margin-top: 1rem;
+    border-radius: 24px;
+    width: 30%;
+    margin: 0.5rem 0;
+    padding: 0.2rem 0;
+    position: relative;
+    right: 20%;
     text-align: center;
 }

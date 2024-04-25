@@ -5,30 +5,20 @@ window.onload = function() {
     // Exibir os detalhes do produto na página
     const containerDetalhes = document.getElementById("produto__principal");
     containerDetalhes.innerHTML = `
-    <main class="produto__principal">
-    <div class="produto__imagem">
-      <img src="${produtoSelecionado.imagem}" alt="Produto">
+    <main id="produto__principal">
+    <div class="containerdetalhe">
+        <div class="produto__detalhe">
+            <img class="img" src=${produtoSelecionado.imagem} alt="">
+            <div class="detalhe">
+                <h2>${produtoSelecionado.nome}</h2>
+                <p>${produtoSelecionado.descricao}</p>
+                <h1>R$${produtoSelecionado.preco}</h1>
+                <p>Todos os nosso produtos tem a mesma quantidade de <strong>320ml</strong></p>
+                <p>vendindo por Cappuccinododev</p>
+                <button>comprar</button>
+            </div>
+        </div>
     </div>
-    <div class="produto__sobre">
-      <h2>${produtoSelecionado.nome}</h2>
-      <p>${produtoSelecionado.descrição}</p>
-      <label for="ul">Tamanho</label>
-      <ul>
-        <li><button>pequeno</button></li>
-        <li><button>médio</button></li>
-        <li><button>grande</button></li>
-      </ul>
-      <h3>R$ ${produtoSelecionado.preco}</h3>
-    </div>
-    <div class="produto__resumo">
-      <h2>Detalhes da compra</h2>
-      <h3>Preço: R$ ${produtoSelecionado.preco}</h3>
-      <input type="button" value="quantidade">
-      <p>uma grande quantidade <br> pode gerar falta do pedido</p>
-      <button>Adicionar ao carrinho</button>
-      <button>Compre agora</button>
-      <p>Vendido por <strong>Cappuccionododev</strong></p>
-    </div>
-  </main>
+</main>
     `;
 };

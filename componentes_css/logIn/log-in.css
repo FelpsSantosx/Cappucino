@@ -6,7 +6,7 @@
 .container__filho-logo {
     height: 100vh;
     padding: 0 8rem;
-    background-image: url('/Cappucino/assents/funfo\ Login.png');
+    background-image: url('/assents/fundo_Login.png');
     color: var(--font-color-ligth);
     display: flex;
     justify-content: center;

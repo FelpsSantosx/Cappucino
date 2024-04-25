@@ -6,9 +6,11 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .titulo__produto {
+    text-align: center;
     font-family: var(--font);
     color: var(--font-color-ligth);
     font: 1.9rem;
