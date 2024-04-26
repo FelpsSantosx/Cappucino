@@ -4,20 +4,20 @@ const senha = document.getElementById("senha")
 function verificaSenha(idTag) {
     const item = document.getElementById(`${idTag}`)
     if (item.value.length < 8) {
-        item.classList.remove('is-valid')
-        item.classList.add("is-invalid")
+        item.classList.remove('esta_valido')
+        item.classList.add("esta__invalido")
     }
-    else if (!item.classList.contains('is-valid')) {
-        item.classList.remove('is-invalid')
-        item.classList.add("is-valid")
+    else if (!item.classList.contains('esta_valido')) {
+        item.classList.remove('esta__invalido')
+        item.classList.add("esta_valido")
     }
 }
 
 function ativarBotao() {
-    if (senha.classList.contains('is-valid')) {
+    if (senha.classList.contains('esta_valido')) {
      btn.disabled = false
     }
-    if (senha.classList.contains('is-invalid')) {
+    if (senha.classList.contains('esta__invalido')) {
      btn.disabled = true
     }
     if (senha.disabled == true) {
@@ -29,6 +29,7 @@ function ativarBotao() {
 document.getElementById('senha').addEventListener('input', function () {
     verificaSenha('senha')
 })
+
 senha.addEventListener('input', function () {
     ativarBotao()
     console.log("bnt");

@@ -8,30 +8,30 @@ const btn = document.getElementById("fbtn")
 function verificaBasico(idTag){
     const item = document.getElementById(`${idTag}`)
     if(item.value == ''){
-        item.classList.remove('is-valid')
-        item.classList.add("is-invalid")
+        item.classList.remove('esta_valido')
+        item.classList.add("esta__invalido")
     }                                                      
-    else if(!item.classList.contains('is-valid')){
-        item.classList.remove('is-invalid')
-        item.classList.add("is-valid")   
+    else if(!item.classList.contains('esta_valido')){
+        item.classList.remove('esta__invalido')
+        item.classList.add("esta_valido")   
     }
 }
 function verificaSenha(idTag) {
     const item = document.getElementById(`${idTag}`)
     if(item.value.length < 8){
-        item.classList.remove('is-valid')
-        item.classList.add("is-invalid")
+        item.classList.remove('esta_valido')
+        item.classList.add("esta__invalido")
     }                                                  
-    else if(!item.classList.contains('is-valid')){
-        item.classList.remove('is-invalid')
-        item.classList.add("is-valid")  
+    else if(!item.classList.contains('esta_valido')){
+        item.classList.remove('esta__invalido')
+        item.classList.add("esta_valido")  
     }
 }
 function ativarBotao() {
-    if (nome.classList.contains('is-valid') && sobrenome.classList.contains('is-valid') && cpf.classList.contains('is-valid') && senha.classList.contains('is-valid') && confsenha.classList.contains('is-valid')) {
+    if (nome.classList.contains('esta_valido') && sobrenome.classList.contains('esta_valido') && cpf.classList.contains('esta_valido') && senha.classList.contains('esta_valido') && confsenha.classList.contains('esta_valido')) {
         btn.disabled = false
     }
-    if (nome.classList.contains('is-invalid') || sobrenome.classList.contains('is-invalid') || cpf.classList.contains('is-invalid') || senha.classList.contains('is-invalid') || confsenha.classList.contains('is-invalid')) {
+    if (nome.classList.contains('esta__invalido') || sobrenome.classList.contains('esta__invalido') || cpf.classList.contains('esta__invalido') || senha.classList.contains('esta__invalido') || confsenha.classList.contains('esta__invalido')) {
         btn.disabled = true
     }                                                 
 }
@@ -40,12 +40,12 @@ document.getElementById('fcpf').addEventListener("input", function() {
     const item = document.getElementById('fcpf')
     console.log(item.value.length);
     if(item.value == '' || item.value.length > 11){
-        item.classList.remove('is-valid')
-        item.classList.add("is-invalid")
+        item.classList.remove('esta_valido')
+        item.classList.add("esta__invalido")
     }
-    else if(!item.classList.contains('is-valid')){
-        item.classList.remove('is-invalid')
-        item.classList.add("is-valid")   
+    else if(!item.classList.contains('esta_valido')){
+        item.classList.remove('esta__invalido')
+        item.classList.add("esta_valido")   
     }
     ativarBotao()
 })
