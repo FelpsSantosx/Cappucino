@@ -13,6 +13,8 @@
 
 @import url('componentes_css/telaProduto/sobreProduto.css');
 
+@import url('componentes_css/carrinho/carrinho.css');
+
 
 :root {
     --font: "Open Sans", sans-serif;
