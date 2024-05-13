@@ -1,3 +1,11 @@
+<?php
+
+if(!isset($_SESSION)) {
+    session_start();
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -32,7 +40,7 @@
                         <a class="nav-link text-light" href="cadastre-se.html">Cadastre-se</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="log-in.html">Entre</a>
+                        <a class="nav-link text-light" href="log-in.php">Entre</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="carrinho.html"><img class="carrinho__compra" src="assents/Vector.png" alt=""></a>
