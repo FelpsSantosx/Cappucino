@@ -13,12 +13,32 @@ window.onload = function() {
                 <h2>${produtoSelecionado.nome}</h2>
                 <p>${produtoSelecionado.descricao}</p>
                 <h1>R$${produtoSelecionado.preco}</h1>
-                <p>Todos os nosso produtos tem a mesma quantidade de <strong>320ml</strong></p>
+                <p>Todos os  produtos tem a mesma quantidade de <strong>320ml</strong></p>
                 <p>vendindo por Cappuccinododev</p>
-                <button>comprar</button>
+                <button id="btnCarrinho">comprar</button>
             </div>
         </div>
     </div>
 </main>
     `;
+
+    
 };
+
+ const btnCarrinho = document.getElementById('btnCarrinho')
+ console.log(btnCarrinho)
+
+//  btnCarrinho.forEach(btnCarrinhos => {
+//      btnCarrinhos.addEventListener("click", clique);
+//  });
+
+// function clique(event) {
+//     const indexProdutoSelecionado = parseInt(event.target.dataset.index);
+  
+//     // Armazenar o índice do produto selecionado no local storage
+//     localStorage.setItem("indexProdutoCarrinho", indexProdutoSelecionado);
+  
+//     // Redirecionar para a página do carrinho
+//     window.location.href = "carrinho.html";
+//   }
+  

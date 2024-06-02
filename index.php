@@ -1,10 +1,14 @@
 <?php
-
-if(!isset($_SESSION)) {
-    session_start();
-}
-?>
-
+    
+    session_start();  
+    if((!isset($_SESSION["id"]) == true) && (!isset($_SESSION["nome"])) == true) 
+    {
+        unset( $_SESSION["id"] );
+        unset( $_SESSION["nome"] );
+        header("lacation: login.php");
+    }
+    $logado = $_SESSION["nome"];
+    ?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -29,7 +33,7 @@ if(!isset($_SESSION)) {
     <header>
         <nav class="navbar bg-body-tertiary">
             <div class="container">
-                <a class="navbar-brand" href="/">
+                <a class="navbar-brand" href="index.php">
                     <h1>CAPPUCCINODODEV</h1>
                 </a>
                 <ul class="nav justify-content-end">
@@ -37,7 +41,7 @@ if(!isset($_SESSION)) {
                         <a class="nav-link text-light" href="#">Quem somos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="cadastre-se.html">Cadastre-se</a>
+                        <a class="nav-link text-light" href="cadastre-se.php">Cadastre-se</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-light" href="log-in.php">Entre</a>
@@ -80,6 +84,7 @@ if(!isset($_SESSION)) {
         </section>
 
         <section id="forms">
+            <form action="https://api.staticforms.xyz/submit" method="post">
             <div class="card__forms">
                 <h2>Fale Conosco</h2>
                 <div class="mb-3">
@@ -88,11 +93,15 @@ if(!isset($_SESSION)) {
                         placeholder="name@example.com">
                 </div>
                 <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Digite aqui</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <label for="exampleFormControlTextarea1"  class="form-label">Digite aqui</label>
+                    <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="3"></textarea>
                     <button type="submit" class="btn btn-secondary">Submit</button>
                 </div>
             </div>
+
+            <input type="hidden" name="accessKey" value="6ca48182-902d-42e7-8acf-00bd8e338778">
+            <input type="hidden" name="redirectTo" value="http://localhost/Cappucino/index.php">
+            </form>
         </section>
 
     </main>
